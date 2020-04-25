@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>vendredi</title>
+	<meta name="description" content="vendredi">
+    <meta name="robots" content="noindex, nofollow">
+	<style>
+		body.home {
+			margin: 0;
+			padding: 0;
+		}
+
+		img.home-title {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 90%;
+			margin: auto;
+			z-index: 2;
+			padding: 3rem;
+			opacity: 0.92;
+		}
+
+		img.home-filmde {
+			position: fixed;
+			top: 25%;
+			left: 0;
+			right: 0;
+			z-index: 5;
+			width: 20%;
+			margin: auto;
+			padding: 4rem;
+			opacity: 0.92;
+		}
+
+		.home-cover {
+			position: absolute;
+			background-position: top center;
+			background-size: cover;
+			background-image: url(img/villeperdue-index-web.jpg);
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+		}
+
+		div.video-top {
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+			box-sizing: inherit;
+			display: block;
+		}
+
+		div.video-top video {
+			display: inline-block;
+			-o-object-fit: cover;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			box-sizing: inherit;
+			z-index: 1;
+		}
+
+		@media (max-width: 800px) {
+			img.home-title {
+				width: auto;
+				margin: 1rem;
+				padding: 0;
+				padding-top: 4rem;
+			}
+
+			img.home-filmde {
+				width: 50%;
+			}
+	</style>
+</head>
+
+<body class="home">
+	<a href="https://eurogroupe.org/dev/vendredi/category/a-venir/">
+		<div class="video-top">
+			<img class="home-title" src="img/villeperdue-title.svg" alt="">
+			<img class="home-filmde" src="img/villeperdue-infos.svg" alt="">
+			<video src="img/villeperdue.mp4" autoplay="" muted="" playsinline="" loop=""
+				poster="img/villeperdue-index-web.jpg"></video>
+		</div>
+	</a>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>vendredi</title>
+	<meta name="description" content="vendredi">
+    <meta name="robots" content="noindex, nofollow">
+	<style>
+		body.home {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+
+		img.home-title {
+			position: fixed;
+			top: 25%;
+			bottom: 25%;
+			left: 25%;
+			right: 25%;
+			width: 50%;
+			margin: auto;
+			z-index: 2;
+		}
+
+		img.home-filmde {
+			position: fixed;
+			width: 20%;
+			padding: 2rem;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+		}
+
+		img.home-sortie {
+			position: fixed;
+			width: 25%;
+			padding: 2rem;
+			bottom: 0;
+			right: 0;
+			z-index: 2;
+		}
+
+		div.video-top {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 50%;
+			z-index: 1;
+		}
+
+		div.video-bottom {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 50%;
+			z-index: 1;
+		}
+
+		video {
+			width: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+		}
+
+		@media (max-width: 1024px) {
+			video {
+				width: 125%;
+			}
+		}
+
+		@media (max-width: 800px) {
+			img.home-title {
+				left: 12.5%;
+				right: 12.5%;
+				width: 75%;
+			}
+
+			img.home-filmde {
+				width: 50%;
+				top: 0;
+				bottom: auto;
+				left: 15%;
+				right: 15%;
+				margin: auto;
+			}
+
+			img.home-sortie {
+				width: 60%;
+				top: auto;
+				bottom: bottom;
+				left: 15%;
+				right: 15%;
+				margin: auto;
+			}
+
+			video {
+				width: 150%;
+			}
+		}
+
+		@media (max-width: 600px) {
+			video {
+				width: 200%;
+			}
+		}
+	</style>
+</head>
+
+<body class="home">
+	<a href="https://eurogroupe.org/dev/vendredi/category/a-venir/"><img class="home-filmde" src="img/PCDL_filmde.svg"
+			alt=""></a>
+	<a href="https://eurogroupe.org/dev/vendredi/category/a-venir/"><img class="home-sortie" src="img/PCDL_sortie.svg"
+			alt=""></a>
+	<a href="https://eurogroupe.org/dev/vendredi/category/a-venir/"><img class="home-title" src="img/PCDL_titre.svg"
+			alt=""></a>
+	<div class="video-top"><video src="img/PCDLWEB1.mp4" autoplay="" muted="" playsinline="" loop=""
+			poster="img/PCDLWEB1.jpg"></video></div>
+	<div class="video-bottom"><video src="img/PCDLWEB2.mp4" autoplay="" muted="" playsinline="" loop=""
+			poster="img/PCDLWEB2.jpg"></video></div>
+</body>
+
+</html>
